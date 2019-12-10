@@ -21,7 +21,7 @@
  text-align: center;
 }
 #img-div{
- // width: 95%;
+  width: 95%;
   margin: auto;
   background: url(https://cdn-media-1.freecodecamp.org/imgr/MJAkxbh.png);
   grid-area: image;
@@ -45,6 +45,7 @@
   padding: 10px;
 }
 #content{
+  width: 95%;
   margin: auto;
   background-color: hsl(150,0%,86%);
   border: 1px solid #ccc;
