@@ -1,19 +1,35 @@
 #main{
-  background-color: hsl(150,0%,80%);
-  font-family: Lobster;
-  color: rgba(0,0,0,0.8);
+    font-family: Lobster;
+    color: rgba(0,0,0,0.8);
+    font-size: 1.5em;
+    min-height: 300px;
+    background: LightGray;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 50px auto auto auto;
+    grid-gap: 50px;
+    grid-template-areas:
+      "header"
+      "image"
+      "content"
+      "footer";
+}
+#header{
+   grid-area: header;
 }
 #title{
  text-align: center;
 }
 #img-div{
+ // width: 95%;
   margin: auto;
- width:30%;
   background: url(https://cdn-media-1.freecodecamp.org/imgr/MJAkxbh.png);
+  grid-area: image;
+  
 }
 #image{
-	width: 70%;
-  max-width: 240px; 
+  max-width: 840px; 
+  width: 90%;
   height: auto;
 	margin: auto;
   display: block;
@@ -30,23 +46,26 @@
 }
 #content{
   margin: auto;
-  width: 50%;
   background-color: hsl(150,0%,86%);
   border: 1px solid #ccc;
   box-shadow: 0px 10px 20px rgba(0,0,0,0.19), 0px 6px 6px rgba(0,0,0,0.23);
+  grid-area: content;
 }
 #tribute-info{
   text-align: center;
-  padding: 20px;
+  padding-top:1.5em;
 }
 #list{
-  padding-left: 50px;
-  padding-bottom: 20px;
-  line-height: 25px;
+ 
+  padding-bottom: 2em;
+  line-height: 1.5em;
+  font-family: sans-serif;
 }
 #footer{
   text-align: center;
   margin-top: 20px;
+  margin-bottom: 20px;
+  grid-area: footer;
 }
 #tribute-link{
 }
